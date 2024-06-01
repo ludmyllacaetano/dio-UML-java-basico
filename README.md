@@ -3,22 +3,20 @@
 ```mermaid
     classDiagram
     class ReprodutorMusical {
-      +reproduzirMusica() void
-      +pausarMusica() void
-      +pularMusica() void
+      +tocar() void
+      +pausar() void
+      +selecionarMusica(String musica) 
     }
 
     class AparelhoTelefonico {
-      +ligar() void
-      +desligar() void
+      +ligar(String numero)
       +atender() void
-      +correioDeVoz() void
+      +iniciarCorreioDeVoz() void
       }
   
     class NavegadorInternet {
-      +abrirPagina() void
-      +novaAba() void
-      +fecharPagina() void
+      +exibirPagina(String url)
+      +adicionarNovaAba() void
       +atualizarPagina() void
       }
   
